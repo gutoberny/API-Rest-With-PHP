@@ -1,0 +1,14 @@
+{
+    "name": "gberny/mosyle-test",
+    "authors": [
+        {
+            "name": "Gustavo Berny"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "App"
+        }
+    }
+}
