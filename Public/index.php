@@ -1,8 +1,7 @@
 <?php
 
-    require_once("../vendor/autoload.php");
+require_once("../vendor/autoload.php");
 
-    header("Content-type: application/json");
-    
-    new App\Core\Router();
+header("Content-type: application/json");
 
+new App\Core\Router();

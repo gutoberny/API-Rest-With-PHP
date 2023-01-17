@@ -2,16 +2,18 @@
 
 use App\Core\Controller;
 
-class Login extends Controller{
-    
-    public function newLogin(){
+class Login extends Controller
+{
+
+    public function newLogin()
+    {
         $login = $this->getRequestBody();
-        
+
         $userModel = $this->model("ClassLogin");
 
         $newLogin = $userModel->newLogin($login);
-        
-        if(!$newLogin) {
+
+        if (!$newLogin) {
             http_response_code(204);
             exit;
         } else {
